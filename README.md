@@ -32,6 +32,14 @@ This repo contains two versions of the firmware:
    * author: **[TheAbsurdator](https://github.com/TheAbsurdator)**
 
 ---
+## 📦 Hardware Components Used
+
+Before diving into the wiring, make sure you have the following hardware components ready:
+* **ESP32-C3 Development Board** (with built-in 0.42" SSD1306 OLED display)
+* **Sensirion SCD41 Sensor Module** (High-precision photoacoustic CO2, temperature, and humidity sensor)
+* **Jumper Wires** (For making direct connections between the sensor and the board)
+* **USB-C Cable** (For power supply and code uploading)
+---
 
 ## 🛠️ Wiring Diagram
 
@@ -59,7 +67,7 @@ The project is written in C++ using the Arduino IDE framework. The following lib
 ## ⚙️ Setup & Configuration
 
 > ⚠️ **WARNING FOR FIRST-TIME STARTUP:**  
-> The **Sensirion SCD41 Sensor Module** features an intelligent built-in automatic self-calibration algorithm. **When powering on this sensor for the very first time, you MUST take the device outside into the fresh open air for at least 5–10 minutes!** The sensor requires exposure to clean outdoor air to properly set its internal baseline calibration. Skipping this step will result in inaccurate readings on monitor.
+> The **Sensirion SCD41** features an intelligent built-in automatic self-calibration algorithm. **When powering on this sensor for the very first time, you MUST take the device outside into the fresh open air for at least 5–10 minutes!** The sensor requires exposure to clean outdoor air to properly set its internal baseline calibration. Skipping this step will result in inaccurate readings on monitor.
 
 1. **Baud Rate:** Ensure your *Serial Monitor* is set to **115200 baud** to read live telemetry logs correctly.
 2. **First Read Calibration:** The SCD41 sensor takes a brief moment to initialize properly. The code includes a short delay sequence on startup to ensure accurate initial readings rather than generic zeros.

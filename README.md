@@ -58,6 +58,9 @@ The project is written in C++ using the Arduino IDE framework. The following lib
 
 ## ⚙️ Setup & Configuration
 
+> ⚠️ **WARNING FOR FIRST-TIME STARTUP:**  
+> The Sensirion SCD41 features an intelligent built-in automatic self-calibration algorithm. **When powering on this sensor for the very first time, you MUST take the device outside into the fresh open air for at least 5–10 minutes!** The sensor requires exposure to clean outdoor air to properly set its internal baseline calibration. Skipping this step will result in inaccurate readings on monitor.
+
 1. **Baud Rate:** Ensure your *Serial Monitor* is set to **115200 baud** to read live telemetry logs correctly.
 2. **First Read Calibration:** The SCD41 sensor takes a brief moment to initialize properly. The code includes a short delay sequence on startup to ensure accurate initial readings rather than generic zeros.
 3. ** Quick Test:** To verify that everything is working dynamically without professional testing equipment, simply **blow/exhale gently directly onto the SCD41 sensor**. Because human breath contains a high concentration of carbon dioxide, you will immediately see a massive spike in the CO2 ppm values on both the OLED screen and the Serial Monitor log!

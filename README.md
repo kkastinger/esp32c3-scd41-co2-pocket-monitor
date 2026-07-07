@@ -6,9 +6,10 @@ A ultra-compact, pocket-sized carbon dioxide (CO2), temperature, and humidity mo
 
 ## 📸 Gallery
 
-![Hardware Startup State](images/esp1.png)
-
-![Active Measurement Reading](images/esp2.png)
+<p align="center">
+  <img src="images/esp1.png" width="30%" alt="active"/>
+  <img src="images/esp2.png" width="30%" alt="startup"/>
+</p>
 
 ---
 
